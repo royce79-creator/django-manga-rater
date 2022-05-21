@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for snack in snack_list %}
+
+<li><a href="{% url 'manga_detail' manga_app.pk %}">{{manga_app.name}}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock content %}
